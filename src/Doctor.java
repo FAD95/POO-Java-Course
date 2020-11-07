@@ -3,6 +3,12 @@ public class Doctor {
     String name;
     String speciality;
 
+    Doctor(String name){
+        id++;
+        this.name=name;
+        System.out.println("Construyendo el objeto Doctor");
+    }
+
     Doctor( String name, String speciality){
         id++;
         this.name=name;
