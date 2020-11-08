@@ -1,58 +1,16 @@
-public class Patient {
-    private int id;
-    private String name;
-    private String email;
-    private String address;
-    private String phoneNumber;
+public class Patient extends User {
     private String birthday;
     private double weight;
     private double height;
     private String blood;
 
     Patient(String name, String email){
-        this.name=name;
-        this.email=email;
+        super(name, email);
     }
 
     public void showPatient() {
-        System.out.println("Name: "+name);
-        System.out.println("Email: "+email);
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+        System.out.println("Name: "+super.getName());
+        System.out.println("Email: "+super.getEmail());
     }
 
     public String getBirthday() {
