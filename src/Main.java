@@ -21,7 +21,7 @@ public class Main {
         Patient patient = new Patient("Florez", "florez@mail.com");
         patient.showPatient();
 
-        System.out.println(Enum.Day.MONDAY.getSpanish());
+        System.out.println(Enum.Day.MONDAY);
         Enum.conditions();
 
         //showMenu();
