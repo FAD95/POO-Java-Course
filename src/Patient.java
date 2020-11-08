@@ -22,7 +22,7 @@ public class Patient extends User {
     }
 
     public String getWeight() {
-        return weight+"kg.";
+        return weight+" kg.";
     }
 
     public void setWeight(double weight) {
@@ -30,7 +30,7 @@ public class Patient extends User {
     }
 
     public String getHeight() {
-        return height+"Mts.";
+        return height+" Mts.";
     }
 
     public void setHeight(double height) {
@@ -43,5 +43,11 @@ public class Patient extends User {
 
     public void setBlood(String blood) {
         this.blood = blood;
+    }
+
+    @Override
+    public String toString() {
+        return "Patient: "+getName()+super.toString()+"\nAge: "+birthday+"\nWeight: "+getWeight()+
+                "\nHeight: "+getHeight()+"\nBlood: "+blood;
     }
 }

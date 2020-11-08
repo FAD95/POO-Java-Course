@@ -8,18 +8,10 @@ public class Main {
         doctor1.addAvailableAppointment(new Date(), "4pm");
         doctor1.addAvailableAppointment(new Date(), "6pm");
         doctor1.addAvailableAppointment(new Date(), "2pm");
-
-        for (Doctor.AvailableAppointment aA: doctor1.getAvailableAppointment()) {
-            System.out.println(aA.getDate() + " "+aA.getTime());
-        }
-
-        Doctor doctor2 = new Doctor("Felipe","f@o");
+        System.out.println(doctor1);
 
         Patient patient = new Patient("Florez", "florez@mail.com");
-        patient.showPatient();
-
-        System.out.println(Enum.Day.MONDAY);
-        Enum.conditions();
+        System.out.println(patient);
 
         //showMenu();
     }
