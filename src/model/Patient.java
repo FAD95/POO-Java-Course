@@ -1,16 +1,13 @@
+package model;
+
 public class Patient extends User {
     private String birthday;
     private double weight;
     private double height;
     private String blood;
 
-    Patient(String name, String email){
+    public Patient(String name, String email){
         super(name, email);
-    }
-
-    public void showPatient() {
-        System.out.println("Name: "+super.getName());
-        System.out.println("Email: "+super.getEmail());
     }
 
     public String getBirthday() {
@@ -47,7 +44,7 @@ public class Patient extends User {
 
     @Override
     public String toString() {
-        return "Patient: "+getName()+super.toString()+"\nAge: "+birthday+"\nWeight: "+getWeight()+
+        return "model.Patient: "+getName()+super.toString()+"\nAge: "+birthday+"\nWeight: "+getWeight()+
                 "\nHeight: "+getHeight()+"\nBlood: "+blood;
     }
 }
