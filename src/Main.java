@@ -21,6 +21,9 @@ public class Main {
         Patient patient = new Patient("Florez", "florez@mail.com");
         patient.showPatient();
 
+        System.out.println(Enum.Day.MONDAY.getSpanish());
+        Enum.conditions();
+
         //showMenu();
     }
 }
