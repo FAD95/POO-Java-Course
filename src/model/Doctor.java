@@ -10,7 +10,6 @@ public class Doctor extends User{
         super(name,email);
     }
 
-
     public String getSpeciality() {
         return speciality;
     }
