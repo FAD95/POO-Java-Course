@@ -6,6 +6,7 @@ import java.util.Date;
 public class Main {
     public static void main(String[] args) {
         Doctor doctor1 = new Doctor("Fad", "f@d");
+        doctor1.showDataUser();
 
         doctor1.addAvailableAppointment(new Date(), "4pm");
         doctor1.addAvailableAppointment(new Date(), "6pm");

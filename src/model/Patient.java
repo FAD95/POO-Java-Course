@@ -44,7 +44,13 @@ public class Patient extends User {
 
     @Override
     public String toString() {
-        return "model.Patient: "+getName()+super.toString()+"\nAge: "+birthday+"\nWeight: "+getWeight()+
+        return "Patient: "+getName()+super.toString()+"\nAge: "+birthday+"\nWeight: "+getWeight()+
                 "\nHeight: "+getHeight()+"\nBlood: "+blood;
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Patient");
+        System.out.println("Historial completo");
     }
 }

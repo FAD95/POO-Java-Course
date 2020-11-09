@@ -29,8 +29,14 @@ public class Doctor extends User{
 
     @Override
     public String toString() {
-        return "model.Doctor: "+getName()+super.toString()+"\nSpeciality: "+ speciality+"\n Available: "+
+        return "Doctor: "+getName()+super.toString()+"\nSpeciality: "+ speciality+"\n Available: "+
                 getAvailableAppointment();
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Doctor from Hospital: Cruz Roja");
+        System.out.println("Department: Oncology");
     }
 
     public static class AvailableAppointment{
@@ -63,5 +69,7 @@ public class Doctor extends User{
         public String toString() {
             return "Date: "+date+"\nTime: "+time;
         }
+
+
     }
 }
